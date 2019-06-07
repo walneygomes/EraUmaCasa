@@ -1,7 +1,7 @@
 
 public class FactoryCasa {
-	public CômodosCasa obterLocal(int lo) {
-		CômodosCasa local = null;
+	public CÃ´modosCasa obterLocal(int lo) {
+		CÃ´modosCasa local = null;
 
 		if (lo == 0) {
 			local = new Sala();
@@ -9,6 +9,7 @@ public class FactoryCasa {
 		} else if (lo == 1) {
 			local = new Banheiro();
 		}
+		
 		return local;
 	}
 

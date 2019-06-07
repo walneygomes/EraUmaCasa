@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class PortaProxy extends CômodosCasa {
+public class PortaProxy extends CÃ´modosCasa {
 
 	private String email = "admin";
 	private String senha = "admin";
 	private FactoryCasa factory = new FactoryCasa();
-	CômodosCasa comodo;
+	CÃ´modosCasa comodo;
 	private static int andando = 0;
 
 	public PortaProxy(Chave chave) {
@@ -36,6 +36,10 @@ public class PortaProxy extends CômodosCasa {
 	public void andar() {
 		// TODO Auto-generated method stub
 		factory.obterLocal(andando + 1);
+	}
+	private void voltar() {
+		this.andando--;
+		andar();
 	}
 
 }
